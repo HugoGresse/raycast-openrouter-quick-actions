@@ -2,7 +2,7 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "openrouter-quick-actions",
   "title": "Openrouter Quick Actions",
-  "description": "Performs one-shot actions with OpenRouter",
+  "description": "Performs one-shot actions using LLMs and OpenRouter",
   "icon": "openrouter-quick-actions.png",
   "author": "hugo_gresse",
   "contributors": [],
@@ -113,7 +113,7 @@
     },
     {
       "name": "proofread-no-ui",
-      "title": "Proofread (no UI)",
+      "title": "Proofread (no Ui)",
       "description": "Proofread selected text (no UI)",
       "mode": "no-view",
       "preferences": [

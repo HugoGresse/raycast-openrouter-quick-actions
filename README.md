@@ -6,6 +6,11 @@ Performs one-shot actions (polish writing, summarize text, etc.) with any LLM us
 
 Heavily based on the awesome [ChatGPT Quick Actions](https://www.raycast.com/alanzchen/chatgpt-quick-actions)
 
+# Setup
+
+- Get an API Key from [openrouter.ai](https://openrouter.ai)
+- Pick a model ID from [here](https://openrouter.ai/models?order=top-weekly). Example: `openai/gpt-oss-120b`
+
 # Features
 
 - Results stream in real time

@@ -35,9 +35,16 @@ export default async function ProofreadNoUi() {
     } as never) as unknown as APIPromise<Stream<ChatCompletionChunk>>);
 
     let text = "";
+    let chunkCount = 0;
     for await (const part of stream) {
       const chunk = part.choices[0]?.delta?.content;
-      if (chunk) text += chunk;
+      if (chunk) {
+        text += chunk;
+        chunkCount++;
+        if (chunkCount % 2 === 0) {
+          await showHUD(`Receiving response... (${text.length} chars)`);
+        }
+      }
     }
 
     if (text.trim()) {
